@@ -20,7 +20,7 @@ from sklearn.calibration import calibration_curve
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'outputs'; OUT.mkdir(exist_ok=True)
-DATA = ROOT / 'data' / 'bank-additional-full.csv'
+DATA = ROOT / '9-bank-additional-full.csv'
 FEATURES = ['age','job','marital','education','default','housing','loan','pdays','previous','poutcome']
 NUM = ['age','pdays','previous']; CAT = [x for x in FEATURES if x not in NUM]
 SEED = 42
