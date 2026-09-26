@@ -1,0 +1,92 @@
+{
+  "dataset_rows": 41188,
+  "positive_total": 4640,
+  "positive_rate": 0.11265417111780131,
+  "splits": {
+    "train": {
+      "rows": 28831,
+      "subscribers": 1606,
+      "rate": 0.055703929797787106
+    },
+    "validation": {
+      "rows": 6178,
+      "subscribers": 658,
+      "rate": 0.10650696018128844
+    },
+    "test": {
+      "rows": 6179,
+      "subscribers": 2376,
+      "rate": 0.38452824081566594
+    }
+  },
+  "excluded_columns": [
+    "campaign",
+    "cons.conf.idx",
+    "cons.price.idx",
+    "contact",
+    "day_of_week",
+    "duration",
+    "emp.var.rate",
+    "euribor3m",
+    "month",
+    "nr.employed"
+  ],
+  "validation": {
+    "logistic": {
+      "pr_auc": 0.18954019436557668,
+      "roc_auc": 0.6168807266199727,
+      "brier": 0.25884477206541,
+      "top_20pct": {
+        "contacts": 1236,
+        "subscribers_found": 234,
+        "precision": 0.18932038834951456,
+        "overall_rate": 0.10650696018128844,
+        "lift": 1.7775400596098798,
+        "capture_rate": 0.3556231003039514
+      }
+    },
+    "hist_gradient_boosting": {
+      "pr_auc": 0.1899230115505255,
+      "roc_auc": 0.6197646854764107,
+      "brier": 0.09506840842911642,
+      "top_20pct": {
+        "contacts": 1236,
+        "subscribers_found": 242,
+        "precision": 0.19579288025889968,
+        "overall_rate": 0.10650696018128844,
+        "lift": 1.838310659938423,
+        "capture_rate": 0.3677811550151976
+      }
+    }
+  },
+  "selected_model": "hist_gradient_boosting",
+  "test": {
+    "pr_auc": 0.4546634399923272,
+    "roc_auc": 0.5843372700623555,
+    "brier": 0.3089283376374211,
+    "top_20pct": {
+      "contacts": 1236,
+      "subscribers_found": 578,
+      "precision": 0.46763754045307443,
+      "overall_rate": 0.38452824081566594,
+      "lift": 1.216133149183311,
+      "capture_rate": 0.24326599326599327
+    }
+  },
+  "validation_top20_threshold": 0.06650291167726854,
+  "test_at_validation_threshold": {
+    "contacts": 3131,
+    "precision": 0.44778026189715747,
+    "recall": 0.5900673400673401,
+    "confusion_matrix": [
+      [
+        2074,
+        1729
+      ],
+      [
+        974,
+        1402
+      ]
+    ]
+  }
+}

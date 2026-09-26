@@ -1,0 +1,57 @@
+{
+  "method": "Validation-only grouped permutation importance (average precision loss)",
+  "rows": 1200,
+  "repeats": 3,
+  "features": [
+    {
+      "feature": "pdays",
+      "ap_drop_mean": 0.042754948910574665,
+      "ap_drop_std": 0.0021767770576847233
+    },
+    {
+      "feature": "age",
+      "ap_drop_mean": 0.009901981735347046,
+      "ap_drop_std": 0.023534331186191
+    },
+    {
+      "feature": "education",
+      "ap_drop_mean": 0.00588732746596025,
+      "ap_drop_std": 0.005371241540768785
+    },
+    {
+      "feature": "poutcome",
+      "ap_drop_mean": 0.0014035919684831182,
+      "ap_drop_std": 0.0006278154852346528
+    },
+    {
+      "feature": "loan",
+      "ap_drop_mean": 0.0013486080491118453,
+      "ap_drop_std": 0.0002464322695369806
+    },
+    {
+      "feature": "previous",
+      "ap_drop_mean": -0.0005223543329616794,
+      "ap_drop_std": 0.001854741302352075
+    },
+    {
+      "feature": "marital",
+      "ap_drop_mean": -0.0006496618710879106,
+      "ap_drop_std": 0.00373758047146698
+    },
+    {
+      "feature": "housing",
+      "ap_drop_mean": -0.001751061883680553,
+      "ap_drop_std": 0.0012330903761003395
+    },
+    {
+      "feature": "default",
+      "ap_drop_mean": -0.0021313164307306307,
+      "ap_drop_std": 0.001589152349351157
+    },
+    {
+      "feature": "job",
+      "ap_drop_mean": -0.005789981343393175,
+      "ap_drop_std": 0.0024321632472024627
+    }
+  ]
+}
