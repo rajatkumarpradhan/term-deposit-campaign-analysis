@@ -1,5 +1,10 @@
 # Pre-call term deposit targeting
 
+> **Historical offline ML case study** · Public UCI data · No live customers, outreach system or financial eligibility decision.
+
+**Start here:** [Run the analysis](#run-it) · [Method and leakage boundary](#business-framing-and-method) · [Observed results](#observed-results) · [Interview discussion](#interview-discussion)
+
+
 An end-to-end, interview-ready machine-learning case study using the public UCI Bank Marketing dataset (Portuguese bank, May 2008–November 2010). The question: **with capacity to call only 20% of customers, can we rank likely subscribers using only information plausibly known before a new call?**
 
 **Portfolio owner:** Rajat Kumar. This is a historical ML demonstration, not an outreach or banking eligibility system.
