@@ -1,4 +1,4 @@
-# Pre-call term deposit targeting
+<img src="assets/banner.svg" alt="term-deposit-campaign-analysis" width="100%">
 
 > **Historical offline ML case study** · Public UCI data · No live customers, outreach system or financial eligibility decision.
 
@@ -32,6 +32,10 @@ python predict.py --input 9-bank-additional-full.csv --output outputs/demo_queue
 ```
 
 The demo ranks rows within this batch and flags the highest-scoring 20% for **review only**. Scores are not calibrated probabilities, and the CSV should not be used to contact people. The saved `model.joblib` is generated locally by `analysis.py`; load only models you generated or otherwise trust (joblib uses pickle).
+
+## Method at a glance
+
+<img src="assets/diagram.svg" alt="Architecture and workflow diagram" width="100%">
 
 ## Business framing and method
 
