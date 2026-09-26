@@ -23,7 +23,7 @@ jupyter notebook project.ipynb             # optional guided walkthrough
 After running `analysis.py`, score a compatible CSV containing the 10 pre-call fields with:
 
 ```bash
-python predict.py --input data/bank-additional-full.csv --output outputs/demo_queue.csv --capacity 0.2
+python predict.py --input 9-bank-additional-full.csv --output outputs/demo_queue.csv --capacity 0.2
 ```
 
 The demo ranks rows within this batch and flags the highest-scoring 20% for **review only**. Scores are not calibrated probabilities, and the CSV should not be used to contact people. The saved `model.joblib` is generated locally by `analysis.py`; load only models you generated or otherwise trust (joblib uses pickle).
@@ -63,7 +63,7 @@ At a fixed 20% call capacity on the test period, the ranker selected 1,236 of 6,
 
 - `project.ipynb` - executable guided notebook, including the generated charts and actual test metrics.
 - `analysis.py` - complete deterministic pipeline and chart generator.
-- `data/bank-additional-full.csv` - source data unchanged from UCI archive.
+- `9-bank-additional-full.csv` - source data unchanged from UCI archive.
 - `outputs/metrics.json` - unrounded metrics and split details.
 - `outputs/test_scores.csv` - all 6,179 holdout scores, actual outcomes and top-20% flag.
 - `outputs/*.png` - EDA, precision-recall/calibration, confusion matrix, decile analysis, and validation-only feature importance.
